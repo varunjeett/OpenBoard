@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap"
+      rel="stylesheet"
+    />
+    <title>WhiteBoard Application</title>
+  </head>
+  <body>
+    <!--Toolbar-->
+    <button id="hide" onclick="hideHeader()">TOOLS</button>
+    <div class="hider">
+      <div class="tool-bar">
+        <div class="tool">
+          <img
+            src="./icons/Black_Pencil.svg"
+            alt=""
+            id="pencil"
+            class="tool-image"
+          />
+        </div>
+
+        <div class="tool">
+          <img
+            src="./icons/Eraser.svg"
+            alt=""
+            id="eraser"
+            class="tool-image"
+          />
+        </div>
+
+        <div class="tool">
+          <img
+            src="./icons/StickyNote.svg"
+            alt=""
+            id="sticky"
+            class="tool-image"
+          />
+        </div>
+
+        <div class="tool">
+          <img src="./icons/Undo.svg" alt="" id="undo" class="tool-image" />
+        </div>
+
+        <div class="tool">
+          <img src="./icons/Redo.svg" alt="" id="redo" class="tool-image" />
+        </div>
+
+        <div class="tool">
+          <img
+            src="./icons/Download.svg"
+            alt=""
+            id="download"
+            class="tool-image"
+          />
+        </div>
+
+        <div class="tool">
+          <img
+            src="./icons/Photo.svg"
+            alt=""
+            id="upload"
+            class="tool-image"
+          />
+        </div>
+        <input type="file" name="" id="acceptImg" style="display: none" />
+
+        <div class="tool">
+          <img
+            src="./icons/theme_light_dark_icon_137104.png"
+            alt=""
+            id="darklight"
+            class="tool-image"
+          />
+        </div>
+      </div>
+      
+       <!--Customizer-->
+      <div class="styler">
+        <input
+          type="color"
+          id="favcolor"
+          name="favcolor"
+          value="#000000"
+          oninput="changecolor(this.value)"
+        />
+
+        <input
+          type="range"
+          id="pen-size"
+          min="5"
+          max="30"
+          value="5"
+          onchange="pensizeChange(this.value)"
+        />
+
+        <input
+          type="range"
+          id="eraser-size"
+          min="5"
+          max="30"
+          value="5"
+          onchange="erasersizeChange(this.value)"
+        />
+      </div>
+    </div>
+    
+    <!--Canvas Board-->
+    <canvas></canvas>
+    <script src="script.js"></script>
+  </body>
+</html>

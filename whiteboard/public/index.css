@@ -1,0 +1,145 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.tool-bar{
+  padding-top: 5px;
+  background-color: #9cffe4;
+  height: 5vh;
+  display: flex;
+  justify-content: space-evenly;
+  padding-left: 30px;
+
+}
+.tool{
+  height: 90%;
+}
+
+#pencil,#eraser,#sticky,#undo,#redo,#download,#upload,#darklight{
+  height: 100%;
+}
+
+.upload-img{
+  height: 100%;
+  width: 100%;
+  border: 0px solid black;
+  background-color: rgb(255, 255, 116);
+  border: none;
+  outline: none;
+}
+
+.stickypad{
+  position: absolute;
+  height:15rem;
+  width:15rem;
+  /* background-color: yellow; */
+  left:40vw;
+  top:35vh;
+}
+
+.nav-bar{
+  height: 20%;
+  background-color: aquamarine;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.text-area{
+  height: 80%;
+  width:100%;
+
+}
+
+textarea{
+  height: 100%;
+  width: 100%;
+  border: 0px solid black;
+  background-color: rgb(255, 255, 116);
+  border: none;
+  outline: none;
+  font-family: 'Yusei Magic', sans-serif;
+  font-size: 20px;
+}
+
+.close,.minimize{
+  height:80%;
+  width:18%;
+  border-radius: 50%;
+  background-color: coral;
+  margin-right:5px;
+}
+
+.minimize{
+  background:lightgreen;
+}
+
+.tool:hover{
+  cursor:pointer;
+  border: 1px black solid;
+}
+
+
+/* tool size and color */
+.styler{
+  background-color: #9cffe4;
+  height: 25px;
+  display: flex;
+  justify-content: flex-start;
+  padding-bottom: 4px;
+
+}
+
+input[id="pen-size"]{
+  width: 5%;
+  margin-left: 14px;
+}
+
+input[type=color]{
+  outline: none;
+  margin-left: 5%;
+	width: 25px;
+	height: 25px;
+	border: none;
+	border-radius: 40px;
+	background: none;
+}
+
+input[type="color"]::-webkit-color-swatch-wrapper {
+	padding: 0;
+}
+
+input[type="color"]::-webkit-color-swatch {
+	border: solid 1px #000; /*change color of the swatch border here*/
+	border-radius: 40px;
+}
+
+input[id="eraser-size"]{
+  width: 5%;
+  margin-left: 65px;
+}
+
+.hider{  
+  display: none;
+}
+
+#hide{
+  position: absolute;
+  top: 16px;
+  left: 5px;
+  width: 56px;
+  height: 36px;
+  font-family: 'Yusei Magic', sans-serif;
+  border-radius: 8px;
+  outline: none;
+}
+
+#hide:hover{
+  cursor: pointer;
+}
+
+
+
+
+
